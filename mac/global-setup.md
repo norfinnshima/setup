@@ -1,15 +1,15 @@
 Mac Global Setup
 ===
 
-## Homebrew
+## ◯ Homebrew
 
 https://brew.sh/ja/
 
-## Wget
+## ◯ Wget
 
 https://formulae.brew.sh/formula/wget
 
-## Node.js
+## ◯ Node.js
 
 https://nodejs.org/ja/download
 
@@ -18,3 +18,7 @@ https://nodejs.org/ja/download
 https://github.com/hokaccha/nodebrew
 
 ( https://formulae.brew.sh/formula/nodebrew )
+
+## ◯ Git
+
+https://git-scm.com/install/mac
