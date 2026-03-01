@@ -1,8 +1,6 @@
-Raspberry Pi OS Setup
-===
+# Raspberry Pi OS Setup
 
 ## ◯ Things to Prepare
-
 * 本体（ここでは Raspberry Pi 4）
 * microSD カード
 * 電源アダプタ
@@ -11,7 +9,6 @@ Raspberry Pi OS Setup
 * マウス
 
 ## ◯ Flash an OS image
-
 書き込みソフト: **Raspberry Pi Imager**
 
 * Device: インストールするデバイスを選択
