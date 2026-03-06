@@ -119,40 +119,6 @@ else
 fi
 
 # -----------------------
-# LibreOffice
-# -----------------------
-if [ -d "/Applications/LibreOffice.app" ]; then
-  echo "LibreOffice already installed"
-else
-  echo "Installing LibreOffice..."
-
-  TMP_DIR=$(mktemp -d)
-
-  curl -L "https://www.libreoffice.org/donate/dl/mac-x86_64/ja/LibreOffice.dmg" \
-    -o "$TMP_DIR/libreoffice.dmg"
-
-  hdiutil attach "$TMP_DIR/libreoffice.dmg" -nobrowse
-  cp -R "/Volumes/LibreOffice/LibreOffice.app" /Applications
-  hdiutil detach "/Volumes/LibreOffice"
-
-  rm -rf "$TMP_DIR"
-fi
-
-# -----------------------
-# MAMP
-# -----------------------
-if [ -d "/Applications/MAMP" ]; then
-  echo "MAMP already installed"
-else
-  echo "Installing MAMP..."
-
-  TMP_DIR=$(mktemp -d)
-  curl -L "https://www.mamp.info/downloads/MAMP_MAMP_PRO.pkg" -o "$TMP_DIR/mamp.pkg"
-  sudo installer -pkg "$TMP_DIR/mamp.pkg" -target /
-  rm -rf "$TMP_DIR"
-fi
-
-# -----------------------
 # Slack
 # -----------------------
 if [ -d "/Applications/Slack.app" ]; then

@@ -19,20 +19,11 @@ https://docs.docker.com/desktop/setup/install/mac-install/
 ### Figma
 https://www.figma.com/ja-jp/downloads/
 
-### FileZilla
-https://filezilla-project.org/download.php?platform=macos-arm64
-
 ### Google Chrome
 https://www.google.com/chrome/
 
 ### Google 日本語入力
 https://www.google.co.jp/ime/
-
-### LibreOffice
-https://ja.libreoffice.org/download/download/
-
-### MAMP
-https://www.mamp.info/en/mac/
 
 ### Slack
 https://slack.com/intl/ja-jp/downloads/mac
