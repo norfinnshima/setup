@@ -6,24 +6,15 @@ https://brew.sh/ja/
 ## ◯ Wget
 https://formulae.brew.sh/formula/wget
 
-## ◯ Node.js
-https://nodejs.org/ja/download
-
 ## ◯ Git
 https://git-scm.com/install/mac
 
-## ◯ Application
-### Antigravity
-https://antigravity.google/
+## ◯ Node.js
+https://nodejs.org/ja/download
 
+## ◯ Application
 ### Brave Browser
 https://brave.com/ja/
-
-### CotEditor
-https://coteditor.com/
-
-### Cursor
-https://cursor.com/ja
 
 ### Docker
 https://docs.docker.com/desktop/setup/install/mac-install/
@@ -33,6 +24,9 @@ https://www.figma.com/ja-jp/downloads/
 
 ### FileZilla
 https://filezilla-project.org/download.php?platform=macos-arm64
+
+### Google Chrome
+https://www.google.com/chrome/
 
 ### Google 日本語入力
 https://www.google.co.jp/ime/
