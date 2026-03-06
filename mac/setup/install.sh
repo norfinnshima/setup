@@ -127,15 +127,10 @@ else
   echo "Installing LibreOffice..."
 
   TMP_DIR=$(mktemp -d)
-  ARCH=$(uname -m)
 
-  if [ "$ARCH" = "arm64" ]; then
-    LIBRE_URL="https://download.documentfoundation.org/libreoffice/stable/latest/mac/aarch64/LibreOffice.dmg"
-  else
-    LIBRE_URL="https://download.documentfoundation.org/libreoffice/stable/latest/mac/x86_64/LibreOffice.dmg"
-  fi
+  curl -L "https://www.libreoffice.org/donate/dl/mac-x86_64/ja/LibreOffice.dmg" \
+    -o "$TMP_DIR/libreoffice.dmg"
 
-  curl -L "$LIBRE_URL" -o "$TMP_DIR/libreoffice.dmg"
   hdiutil attach "$TMP_DIR/libreoffice.dmg" -nobrowse
   cp -R "/Volumes/LibreOffice/LibreOffice.app" /Applications
   hdiutil detach "/Volumes/LibreOffice"
