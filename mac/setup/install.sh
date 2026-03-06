@@ -11,9 +11,14 @@ brew update
 
 # -----------------------
 # Brew packages
+# (Git)
 # -----------------------
-echo "Installing brew packages..."
-brew bundle
+if ! command -v git >/dev/null 2>&1; then
+  echo "Installing Git..."
+  brew install git
+else
+  echo "Git already installed"
+fi
 
 # -----------------------
 # Brave Browser
@@ -24,7 +29,6 @@ else
   echo "Installing Brave..."
 
   TMP_DIR=$(mktemp -d)
-
   curl -L "https://laptop-updates.brave.com/latest/osx" -o "$TMP_DIR/brave.dmg"
 
   hdiutil attach "$TMP_DIR/brave.dmg" -nobrowse
@@ -43,7 +47,6 @@ else
   echo "Installing Docker..."
 
   TMP_DIR=$(mktemp -d)
-
   ARCH=$(uname -m)
 
   if [ "$ARCH" = "arm64" ]; then
@@ -70,7 +73,6 @@ else
   echo "Installing Figma..."
 
   TMP_DIR=$(mktemp -d)
-
   curl -L "https://desktop.figma.com/mac/Figma.dmg" -o "$TMP_DIR/figma.dmg"
 
   hdiutil attach "$TMP_DIR/figma.dmg" -nobrowse
@@ -89,7 +91,6 @@ else
   echo "Installing Google Chrome..."
 
   TMP_DIR=$(mktemp -d)
-
   curl -L "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg" -o "$TMP_DIR/chrome.dmg"
 
   hdiutil attach "$TMP_DIR/chrome.dmg" -nobrowse
@@ -108,14 +109,10 @@ else
   echo "Installing Google Japanese Input..."
 
   TMP_DIR=$(mktemp -d)
-
-  curl -L "https://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg" \
-    -o "$TMP_DIR/google-ime.dmg"
+  curl -L "https://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg" -o "$TMP_DIR/google-ime.dmg"
 
   hdiutil attach "$TMP_DIR/google-ime.dmg" -nobrowse
-
   sudo installer -pkg "/Volumes/GoogleJapaneseInput/GoogleJapaneseInput.pkg" -target /
-
   hdiutil detach "/Volumes/GoogleJapaneseInput"
 
   rm -rf "$TMP_DIR"
@@ -130,7 +127,6 @@ else
   echo "Installing LibreOffice..."
 
   TMP_DIR=$(mktemp -d)
-
   ARCH=$(uname -m)
 
   if [ "$ARCH" = "arm64" ]; then
@@ -140,7 +136,6 @@ else
   fi
 
   curl -L "$LIBRE_URL" -o "$TMP_DIR/libreoffice.dmg"
-
   hdiutil attach "$TMP_DIR/libreoffice.dmg" -nobrowse
   cp -R "/Volumes/LibreOffice/LibreOffice.app" /Applications
   hdiutil detach "/Volumes/LibreOffice"
@@ -157,11 +152,8 @@ else
   echo "Installing MAMP..."
 
   TMP_DIR=$(mktemp -d)
-
   curl -L "https://www.mamp.info/downloads/MAMP_MAMP_PRO.pkg" -o "$TMP_DIR/mamp.pkg"
-
   sudo installer -pkg "$TMP_DIR/mamp.pkg" -target /
-
   rm -rf "$TMP_DIR"
 fi
 
@@ -174,9 +166,7 @@ else
   echo "Installing Slack..."
 
   TMP_DIR=$(mktemp -d)
-
-  curl -L "https://slack.com/ssb/download-osx-universal" \
-    -o "$TMP_DIR/slack.dmg"
+  curl -L "https://slack.com/ssb/download-osx-universal" -o "$TMP_DIR/slack.dmg"
 
   hdiutil attach "$TMP_DIR/slack.dmg" -nobrowse
   cp -R "/Volumes/Slack/Slack.app" /Applications
@@ -194,9 +184,7 @@ else
   echo "Installing Sourcetree..."
 
   TMP_DIR=$(mktemp -d)
-
-  curl -L "https://product-downloads.atlassian.com/software/sourcetree/ga/Sourcetree.dmg" \
-    -o "$TMP_DIR/sourcetree.dmg"
+  curl -L "https://product-downloads.atlassian.com/software/sourcetree/ga/Sourcetree.dmg" -o "$TMP_DIR/sourcetree.dmg"
 
   hdiutil attach "$TMP_DIR/sourcetree.dmg" -nobrowse
   cp -R "/Volumes/Sourcetree/Sourcetree.app" /Applications
@@ -214,12 +202,9 @@ else
   echo "Installing VSCode..."
 
   TMP_DIR=$(mktemp -d)
-
-  curl -L "https://update.code.visualstudio.com/latest/darwin-universal/stable" \
-    -o "$TMP_DIR/vscode.zip"
+  curl -L "https://update.code.visualstudio.com/latest/darwin-universal/stable" -o "$TMP_DIR/vscode.zip"
 
   unzip -q "$TMP_DIR/vscode.zip" -d "$TMP_DIR"
-
   cp -R "$TMP_DIR/Visual Studio Code.app" /Applications
 
   rm -rf "$TMP_DIR"
