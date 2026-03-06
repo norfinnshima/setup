@@ -3,9 +3,6 @@
 ## ◯ Homebrew
 https://brew.sh/ja/
 
-## ◯ Wget
-https://formulae.brew.sh/formula/wget
-
 ## ◯ Git
 https://git-scm.com/install/mac
 
