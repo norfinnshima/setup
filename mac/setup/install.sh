@@ -7,7 +7,7 @@ if ! command -v brew >/dev/null 2>&1; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-# brew path detect (AppleSilicon or Intel)
+# brew path detect (Apple Silicon or Intel)
 if [[ -d /opt/homebrew ]]; then
   BREW_PREFIX="/opt/homebrew"
 else
