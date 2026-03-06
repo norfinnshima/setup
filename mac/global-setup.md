@@ -28,8 +28,5 @@ https://www.google.co.jp/ime/
 ### Slack
 https://slack.com/intl/ja-jp/downloads/mac
 
-### Sourcetree
-https://www.sourcetreeapp.com/
-
 ### Visual Studio Code
 https://code.visualstudio.com/

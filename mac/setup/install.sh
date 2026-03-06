@@ -137,24 +137,6 @@ else
 fi
 
 # -----------------------
-# Sourcetree
-# -----------------------
-if [ -d "/Applications/Sourcetree.app" ]; then
-  echo "Sourcetree already installed"
-else
-  echo "Installing Sourcetree..."
-
-  TMP_DIR=$(mktemp -d)
-  curl -L "https://product-downloads.atlassian.com/software/sourcetree/ga/Sourcetree.dmg" -o "$TMP_DIR/sourcetree.dmg"
-
-  hdiutil attach "$TMP_DIR/sourcetree.dmg" -nobrowse
-  cp -R "/Volumes/Sourcetree/Sourcetree.app" /Applications
-  hdiutil detach "/Volumes/Sourcetree"
-
-  rm -rf "$TMP_DIR"
-fi
-
-# -----------------------
 # Visual Studio Code
 # -----------------------
 if [ -d "/Applications/Visual Studio Code.app" ]; then
