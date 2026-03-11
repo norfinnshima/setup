@@ -30,3 +30,21 @@ https://slack.com/intl/ja-jp/downloads/mac
 
 ### Visual Studio Code
 https://code.visualstudio.com/
+
+## ◯ AI
+### Claude Code
+* https://claude.com/product/claude-code
+
+### Codex
+#### Codex CLI
+* https://developers.openai.com/codex/cli/
+
+#### Codex Desktop
+* https://openai.com/ja-JP/index/introducing-the-codex-app/
+
+### Gemini
+#### Gemini CLI
+* https://geminicli.com/docs/
+
+### Cursor
+* https://cursor.com/
