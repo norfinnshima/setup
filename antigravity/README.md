@@ -5,7 +5,7 @@
 
 ### ルール設定
 * チャット右上「…」: Additional options -> Customizations -> Rules -> +Global
-	* GEMINI.md: 「Think in Japanese and always respond in Japanese.」
+	* GEMINI.md: `Always respond in Japanese.`
 
 ## ◯ Webサーチ
 * **プロンプトインジェクションに注意**
@@ -21,7 +21,7 @@
 	* Manage MCP Servers -> Refresh
 * チャット右上「…」: Additional options -> Customizations -> Rules -> Workspace
 	* ルールの名前をつける
-	* GEMINI.md に指示を記述
+	* `GEMINI.md` に指示を記述
 
 ### Context7
 * ライブラリなどを使うときに、最新のドキュメントを参照してくれる
