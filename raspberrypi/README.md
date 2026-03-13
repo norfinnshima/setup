@@ -26,3 +26,16 @@
     * SSHを有効化
   * Raspberry Pi Connect:
     * Enable Raspberry Pi Connect: オフ
+
+## ◯ Backup
+ストレージ全体を「イメージファイル」として丸ごとコピーする
+
+### 手順
+* Raspberry Piをシャットダウン: `sudo shutdown -h now`
+* SDカードを取り外し、PCに接続
+* デバイス名を確認: `diskutil list`
+  * おそらく `/dev/disk2`
+* **gzipで圧縮しながらバックアップ**:
+  * `sudo dd if=/dev/disk2 bs=4M status=progress | gzip > $HOME/raspi-backup/raspi-backup-$(date +%Y%m%d).img.gz`
+* **圧縮イメージからの復元**:
+  * `gunzip -c $HOME/raspi-backup-20260226.img.gz | sudo dd of=/dev/disk2 bs=4M status=progress`
