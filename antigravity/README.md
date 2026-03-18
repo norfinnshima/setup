@@ -5,7 +5,13 @@
 
 ### ルール設定
 * チャット右上「…」: Additional options -> Customizations -> Rules -> +Global
-	* GEMINI.md: `Always respond in Japanese.`
+	* GEMINI.md:
+```
+- Respond in Japanese.
+- Confirm before deleting files.
+- Assume a public GitHub repo. Never expose secrets or credentials.
+- Keep files organized — group related files into subdirectories.
+```
 
 ## ◯ Webサーチ
 * **プロンプトインジェクションに注意**
