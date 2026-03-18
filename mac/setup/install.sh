@@ -21,7 +21,7 @@ brew update
 # Brew packages
 # (Git)
 # -----------------------
-if ! command -v git >/dev/null 2>&1; then
+if ! brew list git >/dev/null 2>&1; then
   echo "Installing Git..."
   brew install git
 else
