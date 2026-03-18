@@ -13,9 +13,7 @@ else
   echo "Homebrew already installed"
 fi
 
-# -----------------------
 # Update Homebrew
-# -----------------------
 echo "Updating Homebrew..."
 brew update
 
