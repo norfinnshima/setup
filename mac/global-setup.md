@@ -6,10 +6,22 @@ https://brew.sh/ja/
 ## ◯ Git
 https://git-scm.com/install/mac
 
+## ◯ CLI Tools
+
+### tmux
+https://github.com/tmux/tmux
+
+### fzf
+https://github.com/junegunn/fzf
+
+### nb
+https://xwmx.github.io/nb/
+
 ## ◯ Node.js
 https://nodejs.org/ja
 
 ## ◯ Application
+
 ### Brave Browser
 https://brave.com/ja/
 
@@ -43,26 +55,29 @@ https://www.sourcetreeapp.com/
 ### Visual Studio Code
 https://code.visualstudio.com/
 
-## ◯ AI
-### Claude Code
+---
+
+## ◯ Claude Code
 * https://claude.com/product/claude-code
 
-### Codex
-#### Codex CLI
+## ◯ Codex
+
+### Codex CLI
 * https://developers.openai.com/codex/cli/
 
-#### Codex Desktop
+### Codex Desktop
 * https://openai.com/ja-JP/index/introducing-the-codex-app/
 
-### Cursor
-* https://cursor.com/
+## ◯ Google
 
-### Google
-#### antigravity
+### antigravity
 * https://antigravity.google/
 
-#### Gemini CLI
+### Gemini CLI
 * https://geminicli.com/docs/
 
-### Ollama
+## ◯ Cursor
+* https://cursor.com/
+
+## ◯ Ollama
 * https://ollama.com/

@@ -29,6 +29,16 @@ else
 fi
 
 # -----------------------
+# tmux
+# -----------------------
+if ! brew list tmux >/dev/null 2>&1; then
+  echo "Installing tmux..."
+  brew install tmux
+else
+  echo "tmux already installed"
+fi
+
+# -----------------------
 # Brave Browser
 # -----------------------
 if [ -d "/Applications/Brave Browser.app" ]; then
