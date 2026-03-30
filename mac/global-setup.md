@@ -11,12 +11,6 @@ https://git-scm.com/install/mac
 ### tmux
 https://github.com/tmux/tmux
 
-### fzf
-https://github.com/junegunn/fzf
-
-### nb
-https://xwmx.github.io/nb/
-
 ## ◯ Node.js
 https://nodejs.org/ja
 
